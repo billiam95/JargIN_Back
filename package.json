@@ -2,7 +2,11 @@
   "name": "jargin_back",
   "version": "1.0.0",
   "engines": {
+<<<<<<< HEAD
     "node": "17.3.0"
+=======
+    "node": "16.13.0"
+>>>>>>> b5defc55bcd1d6f20af834dc54b28b3573ce5ce1
   },
   "description": "JargIN interview resource application",
   "main": "server.js",
