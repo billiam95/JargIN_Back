@@ -4,6 +4,8 @@ const app = express ();
 const db = mongoose.connection;
 require('dotenv').config();
 const interviewsController = require('./controllers/interviews.js');
+const commentsController = require('./controllers/comments.js')
+const resourcesController = require('./controllers/resources.js')
 const cors = require('cors');
 //___________________
 //Port
@@ -39,6 +41,8 @@ app.use(cors());
 //___________________
 //localhost:3000
 app.use('/interviews', interviewsController)
+app.use('/comments', commentsController)
+app.use('/resources', resourcesController)
 
 // Connect to Mongo &
 // Fix Depreciation Warnings from Mongoose
