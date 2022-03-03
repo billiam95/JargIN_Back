@@ -16,9 +16,8 @@ const interviewSchema = new mongoose.Schema({
   devLanguage: String,
   userResponse: String,
   difficulty: Number,
-  offer: Boolean,
-  comment: [Comments.schema]
-}, {timeStamp:true})
+  offer: Boolean
+},{timestamps:true})
 
 const Interviews = mongoose.model('Interview', interviewSchema);
 
