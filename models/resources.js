@@ -5,7 +5,7 @@ type: String,
 user: String,
 description: String,
 link: String
-})
+}, {timeStamp:true})
 
 const Resources = mongoose.model('Resource', resourceSchema);
 

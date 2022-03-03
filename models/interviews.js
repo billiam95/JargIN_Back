@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
+const Comments = require('./comments.js');
+
 
 const interviewSchema = new mongoose.Schema({
-  type: String,
-  user: String,
+  type: {type: String, required: true},
+  user: {type: String, required: true},
   date: String,
   company: String,
   jobTitle: String,
@@ -14,8 +16,9 @@ const interviewSchema = new mongoose.Schema({
   devLanguage: String,
   userResponse: String,
   difficulty: Number,
-  offer: Boolean
-})
+  offer: Boolean,
+  comment: [Comments.schema]
+}, {timeStamp:true})
 
 const Interviews = mongoose.model('Interview', interviewSchema);
 

@@ -1,11 +1,9 @@
 const mongoose = require('mongoose');
 
 const commentSchema = new mongoose.Schema({
-user: String,
-type: String,
-comment: String,
-timeStamp: String
-})
+user: {type: String, required: true},
+comment: {type: String, required: true},
+}, {timeStamp: true})
 
 const Comments = mongoose.model('Comment', commentSchema);
 
