@@ -22,8 +22,8 @@ router.put('/id:', (req,res)=>{
 
 router.post('/', (req,res)=>{
     Interviews.create(req.body, (err, createdInterview)=>{
-      res.json(createdInterview)
-  })
+        res.json(createdInterview)
+    })
 })
 
 module.exports = router;

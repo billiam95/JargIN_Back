@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const interviewSchema = new.mongoose.Schema({
+const interviewSchema = new mongoose.Schema({
   type: String,
   user: String,
   date: String,
@@ -19,4 +19,4 @@ const interviewSchema = new.mongoose.Schema({
 
 const Interviews = mongoose.model('Interview', interviewSchema);
 
-module.exports = Interviews
+module.exports = Interviews;
