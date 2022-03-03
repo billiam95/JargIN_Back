@@ -4,8 +4,8 @@ const app = express ();
 const db = mongoose.connection;
 require('dotenv').config();
 const interviewsController = require('./controllers/interviews.js');
-const commentsController = require('./controllers/comments.js')
-const resourcesController = require('./controllers/resources.js')
+const commentsController = require('./controllers/comments.js');
+const resourcesController = require('./controllers/resources.js');
 const cors = require('cors');
 //___________________
 //Port
