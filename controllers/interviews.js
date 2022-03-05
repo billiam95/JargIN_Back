@@ -14,7 +14,7 @@ router.delete('/:id', (req,res)=>{
     })
 })
 
-router.put('/id:', (req,res)=>{
+router.put('/:id', (req,res)=>{
     Interviews.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedInterview)=>{
         res.json(updatedInterview)
     })
