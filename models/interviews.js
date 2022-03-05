@@ -5,7 +5,7 @@ const Comments = require('./comments.js');
 const interviewSchema = new mongoose.Schema({
   type: {type: String, required: true},
   user: {type: String, required: true},
-  date: String,
+  date: Date,
   company: String,
   jobTitle: String,
   stage: String,
